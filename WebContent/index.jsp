@@ -7,6 +7,18 @@
 <title>GeoTaggin Music Directory</title>
 </head>
 <body>
-<h1> GeoTaggin Music Directory</h1>
+	<h1> GeoTaggin Music Directory</h1>
+	<form name = "tagSong">
+	<table name = "login">
+	
+	<tr>
+	<td>User Name:</td>
+	<td><input type="text" name="username" value="" required> </td>
+	</tr><tr>
+	<td>
+	Password:</td><td> 
+	<input type="password" name="password" required></td></tr>
+	</table>
+	</form>
 </body>
 </html>
