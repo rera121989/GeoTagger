@@ -5,7 +5,6 @@ public class User {
 	int userId;
 	String username;
 	String password;
-	boolean isAdmin;
 
 	public User(int userId, String username, String password, boolean isAdmin) {
 		super();
