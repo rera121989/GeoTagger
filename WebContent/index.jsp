@@ -26,6 +26,7 @@
 </head>
 <body class='container-fluid login-bg'>
 	<div class='row login'>
+
 		<div class='col-md-1 col-sm-1'></div>
 		<div class='col-md-10 col-sm-10'>
 			<h1 class='title'> GeoTaggin Music Directory</h1>
@@ -38,6 +39,7 @@
 				<div class='col-md-1 col-sm-1'></div>
 				<div class='col-md-10 col-sm-10'>
 					<input type="text" name="username"  required placeholder='Username' class='login'> 
+
 				</div>
 				<div class='col-md-1 col-sm-1'></div>
 				
@@ -47,6 +49,7 @@
 				<div class='col-md-1 col-sm-1'></div>
 				<div class='col-md-10 col-sm-10'>
 					<input type="password" name="password" required placeholder='Password' class='login'>
+
 				</div>
 				<div class='col-md-1 col-sm-1'></div>
 				

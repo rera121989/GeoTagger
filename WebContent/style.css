@@ -1,6 +1,7 @@
 
 
  .login-bg{ 
+
   background: url(bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -21,16 +22,27 @@
 .login input{
 	width:85vw;
 	height:6vh;
+
 }
 
 .login.row{
 	margin-top: 1em;
 	margin-bottom: 3em;
 }
+h1{
 
 .login.row.low{
 	margin-top:7em;	
+	
+	
+	background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
 }
+
+
+
 
 .btn{
 	font-size:1.5em;
