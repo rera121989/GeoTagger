@@ -2,6 +2,7 @@
 
 body{
 	background-color:#9e9e9e;
+	
 }
 body { 
   background: url(bg.jpg) no-repeat center center fixed; 
@@ -21,14 +22,21 @@ body {
 input{
 	width:80vw;
 	height:4vh;
-	font-size: 40px;
+	font-size: 100%;
 }
 
 .row{
 	margin-top: 4em;
 	margin-bottom: 4em;
 }
+h1{
 
+	margin: 2%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
 .row.low{
 	margin-top:15em;	
 }

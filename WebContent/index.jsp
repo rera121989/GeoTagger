@@ -23,7 +23,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GeoTaggin Music Directory</title>
 </head>
-<body class='container-fluid'>
+<body  class='container-fluid'>
 	<div class='row'>
 		<div class='col-md-1 col-sm-1'></div>
 		<div class='col-md-10 col-sm-10'>
@@ -36,7 +36,7 @@
 			<div class='row low'>
 				<div class='col-md-1 col-sm-1'></div>
 				<div class='col-md-10 col-sm-10'>
-					<input type="text" name="username"  required placeholder='Username'> 
+					<input type="text" name="username"  placeholder='Username'> 
 				</div>
 				<div class='col-md-1 col-sm-1'></div>
 				
@@ -45,7 +45,7 @@
 			<div class='row'>
 				<div class='col-md-1 col-sm-1'></div>
 				<div class='col-md-10 col-sm-10'>
-					<input type="password" name="password" required placeholder='Password'>
+					<input type="password" name="password" placeholder='Password' size = "15%">
 				</div>
 				<div class='col-md-1 col-sm-1'></div>
 				
