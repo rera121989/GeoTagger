@@ -8,16 +8,16 @@
 </head>
 <body>
 	<h1> GeoTaggin Music Directory</h1>
-	<form name = "tagSong">
+	<form name = "tagSong" action = "">
 	<table name = "login">
 	
 	<tr>
 	<td>User Name:</td>
-	<td><input type="text" name="username" value="" required> </td>
+	<td><input type="text" name="username" value=""> </td>
 	</tr><tr>
 	<td>
 	Password:</td><td> 
-	<input type="password" name="password" required></td></tr>
+	<input type="password" name="password"></td></tr>
 	</table>
 	</form>
 </body>
