@@ -18,6 +18,10 @@
 	<td>
 	Password:</td><td> 
 	<input type="password" name="password"></td></tr>
+	<tr>
+		<td><input type="submit" value="Login"></td>
+		<td><input type="submit" value="Create"></td>
+	</tr>
 	</table>
 	</form>
 </body>
