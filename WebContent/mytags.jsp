@@ -26,7 +26,7 @@
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>My Tags</title>
+<title>Home</title>
 </head>
 <body class='grey-bg main'>
 
