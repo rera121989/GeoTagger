@@ -39,6 +39,9 @@
 	
 		
 			<div class='row low login'>
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 				<div class='col-md-1 col-sm-1'></div>
 				<div class='col-md-10 col-sm-10'>
@@ -58,6 +61,7 @@
 			</div>
 			
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<div class='row'>
 				<div class='col-md-5 col-sm-4'></div>
 				<!-- <div class='col-md-2 col-sm-4'> -->
@@ -65,6 +69,8 @@
 				<!-- </div> -->
 				<div class='col-md-5 col-sm-4'></div>
 =======
+=======
+>>>>>>> origin/master
 			
 			
 			<div class='row login'>
