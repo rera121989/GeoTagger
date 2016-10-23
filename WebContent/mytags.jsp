@@ -47,8 +47,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="/GTMD/Discover.jsp">Discover</a></li> 
-        <li><a href="/GTMD/Create.jsp">Create</a></li> 
+        <li><a href="/GTMD/discover.jsp">Discover</a></li> 
+        <li><a href="/GTMD/create.jsp">Create</a></li> 
         <li><a href="/GTMD/UserProfile.jsp">Profile</a></li> 
       </ul>
     </div>
