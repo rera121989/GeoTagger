@@ -29,7 +29,9 @@
 	margin-top: 1em;
 	margin-bottom: 3em;
 }
-h1{
+
+
+
 
 .login.row.low{
 	margin-top:7em;	
@@ -51,6 +53,7 @@ h1{
 .list-group-item{
 	font-size:1em;
 	z-index:3;
+	padding:12px 12px;
 	
 }
 
@@ -72,11 +75,13 @@ h1{
 	height:30px;
 	font-size:1.2em;
 	padding-top:0px;
+	margin-top:-3px;
 }
 
 
 li{
 	background-color:#323232;
+	
 }
 
 .navbar{
