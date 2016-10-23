@@ -56,7 +56,21 @@
 </nav>
 
 
+<div class='map'>
 
+	<a id='one' href='#' ><img src='song.png' class='song-icon'></a>
+	<a id='two' href='#' ><img src='song.png'  class='song-icon'></a>
+	<a id='three' href='#' ><img src='song.png'   class='song-icon'></a>
+	
+	<img src='gps.png'   class='song-icon' id='gps'>
+</div>
+
+
+<script>
+
+
+
+</script>
 
 
 </body>

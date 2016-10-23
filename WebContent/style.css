@@ -103,3 +103,47 @@ li{
 .main{
 	margin-top:50px;
 }
+
+.map{
+	width:100vw;
+	height:91vh;
+	background: url(map.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.song-icon{
+	height:5vh;
+	width:auto;
+}
+
+#one{
+	position:absolute;
+	top:17vh;
+	right:15vw;
+}
+
+/* track */
+#two{
+	position:absolute;
+	top:77vh;
+	right:60vw;
+}
+
+/* starbucks */
+#three{
+	position:absolute;
+	top:22vh;
+	right:90vw;
+}
+
+
+#gps{
+	position:absolute;
+	top:41vh;
+	right:35vw;
+	
+}
+
