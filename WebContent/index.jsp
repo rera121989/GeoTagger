@@ -33,16 +33,22 @@
 		</div>
 		<div class='col-md-1 col-sm-1'></div>
 	</div>
+<<<<<<< HEAD
+			<div class='row low'>
+=======
 	
 		
 			<div class='row low login'>
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
 				<div class='col-md-1 col-sm-1'></div>
 				<div class='col-md-10 col-sm-10'>
 					<input type="text" name="username"  required placeholder='Username' class='login'> 
 
 				</div>
 				<div class='col-md-1 col-sm-1'></div>
-				
 			</div>
 	
 			<div class='row login'>
@@ -52,9 +58,19 @@
 
 				</div>
 				<div class='col-md-1 col-sm-1'></div>
-				
 			</div>
 			
+<<<<<<< HEAD
+<<<<<<< HEAD
+			<div class='row'>
+				<div class='col-md-5 col-sm-4'></div>
+				<!-- <div class='col-md-2 col-sm-4'> -->
+					<a class="btn btn-primary col-md-2 col-sm-4" href='/home.html'>Login</a>
+				<!-- </div> -->
+				<div class='col-md-5 col-sm-4'></div>
+=======
+=======
+>>>>>>> origin/master
 			
 			
 			<div class='row login'>
@@ -64,8 +80,7 @@
 				</div> 
 				<div class='col-md-5 col-sm-4 col-xs-4'></div>
 				
+>>>>>>> origin/master
 			</div>
-
-	
 </body>
 </html>
