@@ -90,6 +90,12 @@ li{
 	z-index: 9999;
 }
 
+.navbar-inverse .navbar-brand{
+	color:white;
+}
+
+
+
 .navbar-nav{
 	margin-top:0px;	
 	width:100vw;
