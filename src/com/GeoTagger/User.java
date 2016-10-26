@@ -2,9 +2,9 @@ package com.GeoTagger;
 
 public class User {
 
-	int userId;
-	String username;
-	String password;
+	private int userId;
+	private String username;
+	private String password;
 
 	public User(int userId, String username, String password, boolean isAdmin) {
 		super();
