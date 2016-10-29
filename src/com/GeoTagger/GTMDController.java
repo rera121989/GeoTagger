@@ -24,10 +24,11 @@ public class GTMDController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String request_type = (String) request.getAttribute("type");
-		//GTMDRequest
+		GTMDRequest server_request =  (GTMDRequest) request.getAttribute("GTMDRequest");
 		
+		System.out.println(server_request);
 		
+		/*
 		switch(request_type){
 			case "DB Request":
 				//this.getServletConfig().getServletContext().getAttribute("DB Manager").receiveRequest();
@@ -37,7 +38,7 @@ public class GTMDController extends HttpServlet {
 		}
 			
 		
-		
+		*/
 		
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
