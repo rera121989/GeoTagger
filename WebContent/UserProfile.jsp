@@ -36,7 +36,7 @@
 			<table class = "home" >
 			<tr>
 			<td>
-				<a class="btn btn-primary col-md-2 col-sm-4" href='/home.html'>Home</a>
+				<a class="btn btn-primary col-md-2 col-sm-4" href='mytags.jsp'>Home</a>
 			</td>
 			</tr>
 			</table>
