@@ -16,7 +16,16 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href='style.css'>
+<style>
+table{
+border: 2px solid navy;}
 
+
+td{
+	padding: 20px;
+}
+
+</style>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Profile</title>
 </head>
@@ -32,17 +41,17 @@
 				<td><img alt="none" src="http://4.bp.blogspot.com/-7Zu7F8ZCU3M/TrKzo2ntu2I/AAAAAAAAAnk/A917OZHiavI/s1600/insert+image+here.jpg" width = "168" height= "168"></td>
 				<td><textarea class = "description" rows = "6" placeholder = "User Description"></textarea></td>
 			</tr>
-			</table>
-			<table class = "home" >
+
 			<tr>
 			<td>
 				<a class="btn btn-primary col-md-2 col-sm-4" href='mytags.jsp'>Home</a>
+			<td>
+				<a class="btn btn-primary col-md-2 col-sm-4" href='update.jsp'>Update</a>
 			</td>
 			</tr>
 			</table>
 			
 		</div>
 		</div>
-	</div>
 </body>
 </html>
