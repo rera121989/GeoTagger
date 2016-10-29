@@ -23,6 +23,11 @@ public class DBManager {
 		return this.db.login(username, password);
 	}
 	
+	public GTMDResponse receiveRequest(GTMDRequest request){
+		
+	
+	}
+	
 	//Get tags for a user
 	public List<Tag> getMyTags(int id){
 		List<Tag> tags = new ArrayList<Tag>();

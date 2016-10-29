@@ -9,27 +9,17 @@
   background-size: cover;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.title{
-	font-size:8em;
-=======
+
+
+
  .grey-bg{
 	background-color:#eeeeee;
 }
 
 .title{
-=======
- .grey-bg{
-	background-color:#eeeeee;
-}
-
-.title{
->>>>>>> origin/master
 	font-size:3em;
 	margin-top:1em;
 	
->>>>>>> origin/master
 }
 
 .login input{
@@ -42,8 +32,7 @@
 	margin-top: 1em;
 	margin-bottom: 3em;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 img{
 	display: block;
 	margin: auto;
@@ -58,29 +47,23 @@ img{
 	margin: auto;
 }
 
-h1{ 
-=======
-
-=======
-
->>>>>>> origin/master
-
 
 
 .login.row.low{
 	margin-top:7em;	
 	
-	
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
+}
+
+
+
+/* h1{
+
 	background-color: #ffffff;
     border: 1px solid black;
     opacity: 0.6;
     filter: alpha(opacity=60);
 }
-
+ */
 
 
 
