@@ -10,10 +10,15 @@ public class Tag {
 	private String song_artist;
 	private Date time;
 	private int user_id;
+	private double latitude;
+	private double longitude;
 	
 	
-	public Tag(int id, String name, String city, String song_name, String song_artist, Date time, int user_id) {
-		super();
+	public Tag() {
+	}
+	
+	
+	public Tag(int id, String name, String city, String song_name, String song_artist, Date time, int user_id, double latitude, double longitude) {
 		this.id = id;
 		this.name = name;
 		this.city = city;
@@ -21,6 +26,8 @@ public class Tag {
 		this.song_artist = song_artist;
 		this.time = time;
 		this.user_id = user_id;
+		this.latitude = latitude;
+		this.longitude = longitude;
 	}
 	
 	
@@ -66,6 +73,30 @@ public class Tag {
 	}
 	public void setUser_id(int user_id) {
 		this.user_id = user_id;
+	}
+
+
+
+	public int getLongitude() {
+		return longitude;
+	}
+
+
+
+	public void setLongitude(int longitude) {
+		this.longitude = longitude;
+	}
+
+
+
+	public int getLatitude() {
+		return latitude;
+	}
+
+
+
+	public void setLatitude(int latitude) {
+		this.latitude = latitude;
 	}
 	
 	
