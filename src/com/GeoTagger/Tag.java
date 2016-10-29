@@ -12,11 +12,9 @@ public class Tag {
 	private int user_id;
 	private double latitude;
 	private double longitude;
-	
-	
+
 	public Tag() {
 	}
-	
 	
 	public Tag(int id, String name, String city, String song_name, String song_artist, Date time, int user_id, double latitude, double longitude) {
 		this.id = id;
@@ -29,9 +27,7 @@ public class Tag {
 		this.latitude = latitude;
 		this.longitude = longitude;
 	}
-	
-	
-	
+
 	public int getId() {
 		return id;
 	}
@@ -74,31 +70,21 @@ public class Tag {
 	public void setUser_id(int user_id) {
 		this.user_id = user_id;
 	}
-
-
-
-	public int getLongitude() {
+	
+	public double getLongitude() {
 		return longitude;
 	}
-
-
 
 	public void setLongitude(int longitude) {
 		this.longitude = longitude;
 	}
 
-
-
-	public int getLatitude() {
+	public double getLatitude() {
 		return latitude;
 	}
-
-
 
 	public void setLatitude(int latitude) {
 		this.latitude = latitude;
 	}
-	
-	
 	
 }
