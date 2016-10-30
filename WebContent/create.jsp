@@ -71,10 +71,12 @@
   <li class="list-group-item">Song artist:
   	<input class="form-control" type='text' id='artist'>
   </li>
-
+  <li class="list-group-item">City:
+  	<input class="form-control" type='text' id='city'>
+  </li>
   
   <li class="list-group-item">
-  	<a class='btn btn-success center-block' id='submit-tag'>Submit</a>
+  	<a class='btn btn-success center-block' id='submit-tag' data-rel="popup">Submit</a>
   </li>
 
 
@@ -82,39 +84,82 @@
 </ul>
 
 <script>
+var notify = false;
 
 $('#submit-tag').click(function(){
 	
+	if($('#name').val() != '' && $('#title').val() != '' && $('#artist').val() != '' && $('#city').val() != '' ){
 	
-	var data = {'type':'create_tag', 
-			'user_id':1, 
-			'name': $('#name').val(),
-			'song':$('#title').val(), 
-			'artist':$('#artist').val(), 
-			'lat': 34.065509,
-			'long': -118.168666,
-			'city':'Los Angeles'
-		};
-
+		var data = {'type':'create_tag', 
+				'user_id':1, 
+				'name': $('#name').val(),
+				'song':$('#title').val(), 
+				'artist':$('#artist').val(), 
+				'lat': 34.065509,
+				'long': -118.168666,
+				'city':$('#city').val()
+			};
 	
-	$.ajax({
-	    type: 'get', // it's easier to read GET request parameters
-	    url: 'http://localhost:8080/GTMD/tags/create',
-	    dataType: 'JSON',
-	    data:{type:'DB_Request', json:JSON.stringify(data)},
-	}).done(function(data) {
-		console.log(data);
-	}).fail(function (jqXHR, textStatus) {
-		console.log('failed');
-	    console.log(jqXHR);
-	    
-	});
+	
+		$.ajax({
+		    type: 'get', // it's easier to read GET request parameters
+		    url: 'http://localhost:8080/GTMD/tags/create',
+		    dataType: 'JSON',
+		    data:{type:'DB_Request', json:JSON.stringify(data)},
+		}).done(function(data) {
+			console.log(data);
+			var item;
+			if(data){
+				success();
+			}
+			else{
+				failed();
+			}
+		}).fail(function (jqXHR, textStatus) {
+			console.log('failed');
+		    console.log(jqXHR);
+		    failed();
+		});
+		
+	}
+	
+	else{
+		failed();
+	}
 	
 	
 	
 });
 
+function success(){
+	if(!notify){
+		item = '<li class="list-group-item" id="notify"><p class="btn btn-success center-block">Created Tag!</p> </li>';
+		$('.list-group').append(item);
+		
+		notify = true;
+		
+		setTimeout(function() {
+			$('#notify').remove();
+			notify = false;
+		}, 2000);
+		
+	}
+}
 
+function failed(){
+	if(!notify){
+		item = '<li class="list-group-item" id="notify"><p class="btn btn-warning center-block">Failed!</p> </li>';
+		$('.list-group').append(item);
+		
+		notify = true;
+		
+		setTimeout(function() {
+			$('#notify').remove();
+			notify = false;
+		}, 2000);
+		
+	}	
+}
 
 </script>
 </body>

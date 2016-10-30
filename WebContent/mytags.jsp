@@ -60,6 +60,27 @@
 <ul class="list-group">
   <li class="list-group-item top-item">My Tags:</li>
 
+ <!--  <li class="list-group-item">Downtown Los Angeles- 
+  	<p class='small_text'>Song Name</p>
+  	<a class='btn btn-danger list-delete'>Delete</a>
+  </li>
+  <li class="list-group-item">Big Bear Lake- 
+  	<p class='small_text'>Song Name</p>
+  	<a class='btn btn-danger list-delete'>Delete</a>
+  </li>
+  <li class="list-group-item">CSULA- 
+  	<p class='small_text'>Song Name</p>
+  	<a class='btn btn-danger list-delete'>Delete</a>
+  </li>
+  <li class="list-group-item">Location- 
+  	<a class='btn btn-danger list-delete'>Delete</a>
+  	<p class='small_text'>Song Name</p>
+  </li>
+
+
+
+
+
   <li class="list-group-item">Downtown Los Angeles- 
   	<p class='small_text'>Song Name</p>
   	<a class='btn btn-danger list-delete'>Delete</a>
@@ -76,30 +97,9 @@
   	<a class='btn btn-danger list-delete'>Delete</a>
   	<p class='small_text'>Song Name</p>
   </li>
-
-
-<!--  -->
-
-
-  <li class="list-group-item">Downtown Los Angeles- 
-  	<p class='small_text'>Song Name</p>
-  	<a class='btn btn-danger list-delete'>Delete</a>
-  </li>
-  <li class="list-group-item">Big Bear Lake- 
-  	<p class='small_text'>Song Name</p>
-  	<a class='btn btn-danger list-delete'>Delete</a>
-  </li>
-  <li class="list-group-item">CSULA- 
-  	<p class='small_text'>Song Name</p>
-  	<a class='btn btn-danger list-delete'>Delete</a>
-  </li>
-  <li class="list-group-item">Location- 
-  	<a class='btn btn-danger list-delete'>Delete</a>
-  	<p class='small_text'>Song Name</p>
-  </li>
   
   
-<!--  -->
+
   
     <li class="list-group-item">Downtown Los Angeles- 
   	<p class='small_text'>Song Name</p>
@@ -117,7 +117,7 @@
   	<a class='btn btn-danger list-delete'>Delete</a>
   	<p class='small_text'>Song Name</p>
   </li>
-<!--  -->
+
   
   
     <li class="list-group-item">Downtown Los Angeles- 
@@ -136,7 +136,7 @@
   	<a class='btn btn-danger list-delete'>Delete</a>
   	<p class='small_text'>Song Name</p>
   </li>
-<!--  -->
+
   
     <li class="list-group-item">Downtown Los Angeles- 
   	<p class='small_text'>Song Name</p>
@@ -154,7 +154,7 @@
   	<a class='btn btn-danger list-delete'>Delete</a>
   	<p class='small_text'>Song Name</p>
   </li>
-  
+   -->
   
 </ul>
 
@@ -170,6 +170,14 @@ $.ajax({
     data:{type:'DB_Request', json:JSON.stringify(data)},
 }).done(function(data) {
 	console.log(data);
+	
+	
+	for(var i = 0; i < data.length; i++)
+	{
+			var item =   '<li class="list-group-item">'+data[i].city+'-<p class="small_text">'+data[i].song_name +' <br>by '+data[i].song_artist+'</p> <a class="btn btn-danger list-delete">Delete</a></li>';
+			$('.list-group').append(item);
+	}
+	
 }).fail(function (jqXHR, textStatus) {
 	console.log('failed');
     console.log(jqXHR);

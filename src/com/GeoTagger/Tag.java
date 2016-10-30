@@ -16,7 +16,7 @@ public class Tag {
 	public Tag() {
 	}
 	
-	public Tag(int id, String name, String city, String song_name, String song_artist, Date time, int user_id, double latitude, double longitude) {
+	public Tag(int id, String name, String city,  String song_artist, String song_name, Date time, int user_id, double latitude, double longitude) {
 		this.id = id;
 		this.name = name;
 		this.city = city;
@@ -28,7 +28,7 @@ public class Tag {
 		this.longitude = longitude;
 	}
 	
-	public Tag(int id, String name, String city, String song_name, String song_artist, int user_id, double latitude, double longitude) {
+	public Tag(int id, String name, String city, String song_artist, String song_name, int user_id, double latitude, double longitude) {
 		this.id = id;
 		this.name = name;
 		this.city = city;
@@ -40,7 +40,7 @@ public class Tag {
 		this.longitude = longitude;
 	}
 	
-	public Tag( String name, String city, String song_name, String song_artist, int user_id, double latitude, double longitude) {
+	public Tag( String name, String city, String song_artist, String song_name,  int user_id, double latitude, double longitude) {
 		this.name = name;
 		this.city = city;
 		this.song_name = song_name;
