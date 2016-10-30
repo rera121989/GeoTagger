@@ -27,6 +27,30 @@ public class Tag {
 		this.latitude = latitude;
 		this.longitude = longitude;
 	}
+	
+	public Tag(int id, String name, String city, String song_name, String song_artist, int user_id, double latitude, double longitude) {
+		this.id = id;
+		this.name = name;
+		this.city = city;
+		this.song_name = song_name;
+		this.song_artist = song_artist;
+		this.time = new Date();
+		this.user_id = user_id;
+		this.latitude = latitude;
+		this.longitude = longitude;
+	}
+	
+	public Tag( String name, String city, String song_name, String song_artist, int user_id, double latitude, double longitude) {
+		this.name = name;
+		this.city = city;
+		this.song_name = song_name;
+		this.song_artist = song_artist;
+		this.time = new Date();
+		this.user_id = user_id;
+		this.latitude = latitude;
+		this.longitude = longitude;
+	}
+
 
 	public int getId() {
 		return id;

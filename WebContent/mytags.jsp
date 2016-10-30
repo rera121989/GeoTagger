@@ -159,5 +159,22 @@
 </ul>
 
 
+
+<script>
+var data = {'type':'user_tags', 'user_id':1};
+
+$.ajax({
+    type: 'get', // it's easier to read GET request parameters
+    url: 'http://localhost:8080/GTMD/tags/user',
+    dataType: 'JSON',
+    data:{type:'DB_Request', json:JSON.stringify(data)},
+}).done(function(data) {
+	console.log(data);
+}).fail(function (jqXHR, textStatus) {
+	console.log('failed');
+    console.log(jqXHR);
+    
+  });
+</script>
 </body>
 </html>

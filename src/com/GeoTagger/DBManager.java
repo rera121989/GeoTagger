@@ -23,10 +23,10 @@ public class DBManager {
 		return this.db.login(username, password);
 	}
 	
-	public GTMDResponse receiveRequest(GTMDRequest request){
-		
-	
-	}
+//	public GTMDResponse receiveRequest(GTMDRequest request){
+//		
+//	
+//	}
 	
 	//Get tags for a user
 	public List<Tag> getMyTags(int id){
@@ -64,6 +64,19 @@ public class DBManager {
 	
 	//Add a Tag
 	public boolean addTag(Tag tag){
+		int max = 0;
+		
+		List<Tag> tags = db.getTags();
+		
+		for(Tag t: tags){
+			int current = t.getId();
+			if(current > max){
+				max = current;
+			}
+		}
+		
+		tag.setId(max+1);
+		
 		return db.addTag(tag);
 	}
 	//Remove Tags
@@ -78,6 +91,19 @@ public class DBManager {
 	
 	//Add a User
 	public boolean addUser(User user){
+		int max = 0;
+		
+		List<User> users = db.getUsers();
+		
+		for(User u: users){
+			int current = u.getUserId();
+			if(current > max){
+				max = current;
+			}
+		}
+		
+		user.setUserId(max+1);
+		
 		return db.addUser(user);
 	}
 	

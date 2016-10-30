@@ -63,16 +63,13 @@
   <li class="list-group-item top-item">Create Tag:</li>
 
   <li class="list-group-item">Tag Name: 
-  	<input class="form-control" type='text'>
+  	<input class="form-control" type='text' id='name'>
   </li>
   <li class="list-group-item">Song title:
-  	<input class="form-control" type='text'>
+  	<input class="form-control" type='text' id='title'>
   </li>
   <li class="list-group-item">Song artist:
-  	<input class="form-control" type='text'>
-  </li>
-  <li class="list-group-item">Notes:
-  	<input class="form-control" type='text'>
+  	<input class="form-control" type='text' id='artist'>
   </li>
 
   
@@ -84,6 +81,41 @@
   
 </ul>
 
+<script>
 
+$('#submit-tag').click(function(){
+	
+	
+	var data = {'type':'create_tag', 
+			'user_id':1, 
+			'name': $('#name').val(),
+			'song':$('#title').val(), 
+			'artist':$('#artist').val(), 
+			'lat': 34.065509,
+			'long': -118.168666,
+			'city':'Los Angeles'
+		};
+
+	
+	$.ajax({
+	    type: 'get', // it's easier to read GET request parameters
+	    url: 'http://localhost:8080/GTMD/tags/create',
+	    dataType: 'JSON',
+	    data:{type:'DB_Request', json:JSON.stringify(data)},
+	}).done(function(data) {
+		console.log(data);
+	}).fail(function (jqXHR, textStatus) {
+		console.log('failed');
+	    console.log(jqXHR);
+	    
+	});
+	
+	
+	
+});
+
+
+
+</script>
 </body>
 </html>

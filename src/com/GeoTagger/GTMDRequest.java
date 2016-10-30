@@ -17,6 +17,11 @@ public class GTMDRequest {
 	private String type;
 	private String json;
 
+	public GTMDRequest(String type, String json) {
+		this.type = type;
+		this.json = json;
+	}
+
 	public void setType(String type) {
 		this.type = type;
 	}

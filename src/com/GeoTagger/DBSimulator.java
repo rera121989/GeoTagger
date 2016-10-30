@@ -102,6 +102,14 @@ public class DBSimulator {
 	}
 	
 	
+	public int getTagsLength(){
+		return this.tags.size();
+	}
+	
+	public int getUsersLength(){
+		return this.users.size();
+	}
+	
 	
 	
 	
