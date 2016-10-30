@@ -29,7 +29,9 @@
 
 		<div class='col-md-1 col-sm-1'></div>
 		<div class='col-md-10 col-sm-10'>
+		<div class="jumbotron">
 			<h1 class='title'> GeoTaggin Music Directory</h1>
+		</div>
 		</div>
 		<div class='col-md-1 col-sm-1'></div>
 	</div>
