@@ -48,14 +48,126 @@
 </nav>
 
 <div class='map'>
-	<a id='one' href='#' ><img src='song.png' class='song-icon'></a>
-	<a id='two' href='#' ><img src='song.png'  class='song-icon'></a>
-	<a id='three' href='#' ><img src='song.png'   class='song-icon'></a>
+	<a id='one' href='#1' ><img src='song.png' class='song-icon'></a>
+	<a id='two' href='#2' ><img src='song.png'  class='song-icon'></a>
+	<a id='three' href='#3' ><img src='song.png'   class='song-icon'></a>
 	
 	<img src='gps.png'   class='song-icon' id='gps'>
 </div>
 
+
+<div id="player" class="media">
+  <a class="pull-right" href="#">
+    <img class="media-object" id="play" src='play.png'>
+  </a>
+	
+	
+	
+  <a class="pull-left" href="#">
+    <img class="media-object" id="picture">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading white-text" id='name'></h4>
+    <p class='white-text' id='artist'></p>
+ 
+
+  </div>
+
+
+</div>
+
+
 <script>
+
+$('#player').hide();
+var player_display = 0;
+
+$('#three').click(function(){
+	var song_obj = {
+			id:1,
+			song: "Wild Horses",
+			artist: "Rolling Stones",
+			photo: "1.png",
+			name: "Starbucks"
+	};
+	
+	loadSong(song_obj);
+	
+});
+
+$('#two').click(function(){
+	var song_obj = {
+			id:2,
+			song: "Dream On",
+			artist: "Aerosmith",
+			photo: "2.png",
+			name: "CSULA Track"
+	};
+	
+	loadSong(song_obj);
+	
+	
+});
+
+$('#one').click(function(){
+	var song_obj = {
+			id:3,
+			song: "Under pressure",
+			artist: "David Bowie",
+			photo: "3.png",
+			name: "Midterms"
+	};
+	
+	loadSong(song_obj);
+	
+	
+});
+
+
+function loadSong(obj){
+	
+	if(player_display != obj.id){
+		
+		
+		$('#name').html(obj.name);
+		$('#artist').html(obj.song+' <br>-'+obj.artist);
+		$('#picture').attr('src', obj.photo);
+		
+		if(player_display == 0){
+			$('#player').show();
+		}
+
+				
+		
+		player_display = obj.id;
+		
+	}
+	else{
+		
+		pause();
+		$('#player').hide();
+		player_display = 0;
+	}
+}
+
+var audioElement = document.createElement('audio');
+
+$('#play').click(function(){
+	
+	
+     audioElement.setAttribute('src', player_display+'.mp4');
+     audioElement.setAttribute('autoplay', 'false');
+
+     audioElement.play();
+
+     
+	console.log('playing');
+});
+
+
+function pause(){
+	 audioElement.pause();
+}
 
 </script>
 

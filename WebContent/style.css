@@ -181,3 +181,32 @@ li{
 }
 
 
+#player{
+	position:absolute;
+	bottom:-1px;
+	width:100vw;
+	height:15vh;
+	background-color:#323232;
+
+}
+
+.white-text{
+	color:white;
+}
+
+#picture{
+	height:15vh;
+	width:auto;
+}
+
+
+#play{
+	padding-top:2em;
+	padding-right:3em;
+	height:10vh;
+	width:auto;
+}
+
+.media-body{
+	width:40vw;
+}
